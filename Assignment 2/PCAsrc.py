@@ -39,3 +39,17 @@ def PCA(n_components: int, data: np.ndarray, standardize: bool) -> np.ndarray :
     reduced_data = np.matmul(data, eigenvec_selected)
 
     return reduced_data
+
+if __name__ == "__main__" :
+    import pandas as pd
+
+    df = pd.read_csv("IRIS/iris.data", header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'type'])
+    df.drop(["type"], axis=1, inplace=True)
+
+    print(df.head(10))
+
+    n_components = 2
+    standardize = True
+
+    reduced_iris = PCA(n_components, df.to_numpy(), standardize)
+    print(reduced_iris[:10])
