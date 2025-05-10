@@ -1,0 +1,12 @@
+Key Observations from Simple Linear Regression Analysis:
+
+- Coefficient Accuracy: Our custom gradient descent implementation achieves coefficients nearly identical to sklearn's implementation across all features, with differences typically in the range of 10^-6 to 10^-8.
+
+- Feature Importance:
+Median income shows the strongest relationship with house values (~40k increase per income unit)
+Housing age has the weakest relationship
+Population exhibits a slight negative relationship with housing prices
+
+- Baseline Values: Intercepts around 120k-170k indicate the baseline house price independent of feature variation.
+
+- Normalization Impact: Without normalization, features with large scales (total_rooms, population) caused numerical instability in gradient descent. Normalization was essential for algorithm stability.
