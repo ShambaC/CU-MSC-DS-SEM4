@@ -1,0 +1,6 @@
+– The model explains about 63.7% of the variance in median house value (R² = 0.637, adjusted R² = 0.637), indicating a moderately strong fit.
+– All eight predictors are statistically significant (p < 0.001).
+– Median income has the largest positive effect (≈ + 40 300 per income unit).
+– Housing median age (+ 1 158 per year) and total bedrooms (+ 114 per bedroom) also raise values, whereas population (– 38 per person) and total rooms (– 8 per room) have smaller negative impacts.
+– Both latitude (– 42 510 per degree north) and longitude (– 42 730 per degree east) show large negative coefficients, reflecting geographic effects.
+– Households adds a modest positive contribution (+ 48 per household).
